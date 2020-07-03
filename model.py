@@ -38,4 +38,4 @@ pickle.dump(mod_balanced_lr, open('model.pkl','wb'))
 
 # Loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
-print(model.predict([[1, 0,55, 0,0, 113.45, 27.9, 0,0]]))
+print(model.predict([[1,0,55,0,0,113.45,27.9,0,0]]))
