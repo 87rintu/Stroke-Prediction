@@ -33,16 +33,9 @@ mod_balanced_lr = log_reg.fit(x_train, y_train)
 #y_pred_lr_balanced = mod_balanced_lr.predict(x_test)
 
 
-
-
-
-
-
-
-
 # Saving model to disk
 pickle.dump(mod_balanced_lr, open('model.pkl','wb'))
 
 # Loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
-print(model.predict([['Male', 55, 0,0, 113.45, 27.9, 'never smoked']]))
+print(model.predict([[1, 55, 0,0, 113.45, 27.9, 0,0,1]]))
